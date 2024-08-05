@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="w-full bg-slate-200 fixed opacity-90 flex justify-between items-center p-5">
+      <!-- Logo -->
+      <h1 class="text-2xl text-white font-extrabold ml-5 p-2 rounded-ss-3xl rounded-ee-3xl rounded-se-sm rounded-es-sm bg-blue-900 md:text-3xl lg:text-4xl hover:opacity-80 cursor-pointer">FaridFn</h1>
+
+      <!-- Navbar List -->
+      <nav id="nav-menu" class="hidden max-w-[250px] w-full shadow-lg rounded-lg absolute right-0 top-16 bg-white p-4 mr-4 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:p-0 lg:mr-0">
+        <ul class="block space-y-2 lg:flex lg:flex-row lg:items-center lg:gap-4 lg:justify-center lg:space-y-0 lg:space-x-4">
+          <li class="group">
+            <a href="#home" class="text-base text-black group-hover:text-primary md:text-lg lg:text-xl">Home</a>
+          </li>
+          <li class="group">
+            <a href="#about_me" class="text-base text-black group-hover:text-primary md:text-lg lg:text-xl">About Me</a>
+          </li>
+          <li class="group">
+            <a href="#about_me" class="text-base text-black group-hover:text-primary md:text-lg lg:text-xl">About Me</a>
+          </li>
+          <li class="group">
+            <a href="#contact_me" class="text-base text-black group-hover:text-primary md:text-lg lg:text-xl">More<a>
+          </li>
+         
+        </ul>
+      </nav>
+
+      <!-- Dark Mode
+      <div class="flex flex-row items-center mr-5">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" name="darkmode" id="darkmode" hidden />
+        <label for="darkmode">
+          <div class="w-8 h-4 bg-slate-300 rounded-md flex items-center p-1">
+            <div class="w-3 h-3 bg-black rounded-full darkmode-circle"></div>
+          </div>
+        </label>
+        <span class="text-sm text-slate-500 ml-2">Dark</span>
+      </div> -->
+
+      <!-- Hamburger  -->
+      <div class="flex px-4 items-center">
+        <button type="button" id="hamburger" name="hamburger" class="absolute block right-4 lg:hidden">
+          <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex flex-col">
+      <!-- Hero Section Start -->
+      <section id="home" class="bg-slate-200 mt-16 py-10 ">
+        <div class="container flex flex-col lg:flex-row lg:items-center lg:mx-auto">
+          <div class="flex flex-wrap flex-col items-start lg:w-1/2">
+            <div class="w-full px-4">
+              <h1 class="text-base font-semibold text-primary md:text-lg lg:text-xl">Hello Everyone, I m <span class="block text-3xl text-black font-bold md:text-4xl lg:text-5xl">Farid Fakhrudin.</span></h1>
+              <h2 class="text-xl text-slate-900 font-semibold my-2 md:text-2xl lg:text-3xl">Student | Web Developer</h2>
+              <p class="text-base my-3 md:text-lg lg:text-xl md:my-4 lg:my-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptatibus voluptates ratione corrupti quo perferendis reiciendis, ex vero placeat culpa dolorum repellendus dolorem, cum, eveniet sit officiis dignissimos
+                facilis eligendi.
+              </p>
+            </div>
+
+            <div class="w-full flex px-4  space-x-2 mt-5">
+              <button  class="text-base text-black font-semibold border-solid border-2 border-black p-1 rounded-2xl shadow-md md:text-lg lg:text-xl md:p-2 hover:border-none hover:text-white hover:bg-primary">
+                Download CV
+              </button>
+
+              <button class="text-base text-white font-semibold bg-primary p-2  rounded-2xl shadow-md md:text-lg lg:text-xl md:p-2 hover:bg-transparent hover:text-black hover:border-solid hover:border-2 hover:border-black">
+                Contact Me
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-10 relative mx-auto lg:w-1/2 lg:ml-10">
+            <div class="w-full px-4">
+              <img src="img/profile/myProfile.png" alt="I am" class="max-w-full lg:mx-auto relative z-10" />
+              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 z-0">
+                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#0F62FE"
+                    d="M53.4,-44C61.8,-32.1,55.9,-10.4,50.8,11.5C45.7,33.3,41.4,55.1,29,61.6C16.6,68,-3.8,59.1,-18.4,48.2C-33,37.3,-41.9,24.5,-46.6,9.1C-51.4,-6.3,-52.1,-24.2,-43.6,-36.1C-35.2,-48,-17.6,-53.9,2.5,-55.9C22.5,-57.9,45.1,-55.9,53.4,-44Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+       <!-- About Me Start -->
+      <section id="about_me" class="bg-slate-100 py-10">
+        <div class="container">
+          <div class="flex flex-wrap items-center lg:flex-nowrap">
+           
+            <div class="w-full px-4 mb-10 lg:w-1/2">
+              <img src="img/about/aboutme2.jpg" alt="I am" class="max-w-full rounded-xl mx-auto shadow-xl lg:max-w-none lg:w-auto" />
+            </div>
+           
+            <div class="w-full px-4 mb-10  lg:w-1/2">
+              <h2 class="text-2xl text-primary font-bold mt-2 mb-2 md:text-3xl lg:text-4xl">About Me</h2>
+              <p class="text-xl font-semibold mt-4 md:mt-7 lg:mt-10 md:text-2xl lg:text-3xl">I am a Junior Front-End Web Developer.</p>
+              <p class="text-sm text-justify mb-5 md:mb-7 lg:mb-10 md:text-base lg:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis hic, incidunt sapiente quas numquam veritatis, eius qui iusto quis eligendi, animi ab est placeat vitae ea corporis facere molestias error.
+              </p>
+
+              <div class="w-full grid md:grid-cols-2 gap-4 border-solid border-4 border-blue-800 p-4 my-2 ">
+                <div class="flex flex-wrap  items-center ">
+                  <p class="text-lg font-semibold mr-2 md:text-xl lg:text-2xl">Name:</p>
+                  <p class="text-sm md:text-lg lg:text-xl">Farid Fakhrudin</p>
+                </div>
+                <div class="flex flex-wrap items-center">
+                  <p class="text-lg font-semibold mr-2 md:text-xl lg:text-2xl">Age:</p>
+                  <p class="text-sm md:text-lg lg:text-xl">19</p>
+                </div>
+                <div class="flex flex-wrap items-center ">
+                  <p class="text-lg font-semibold mr-2 md:text-xl lg:text-2xl">Address:</p>
+                  <p class="text-sm md:text-lg lg:text-xl">Tasikmalaya, Jawabarat</p>
+                </div>
+                <div class="flex flex-wrap items-center">
+                  <p class="text-lg font-semibold mr-2 md:text-xl lg:text-2xl">Email:</p>
+                  <p class="text-sm md:text-lg lg:text-xl">abc@gmail.com</p>
+                </div>
+              </div>
+
+              <!-- Sosmed Icons -->
+              <div class="flex flex-row items-center gap-3">
+                <span class=" ">
+                  <a href="#" target="_blank" class="text-lg hover:text-primary md:text-xl lg:text-2xl">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                </span>
+                <span class=" hover:text-primary ">
+                  <a href="#" target="_blank" class="text-lg  md:text-xl lg:text-2xl">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </span>
+                <span class=" hover:text-primary ">
+                  <a href="#" target="_blank" class="text-lg md:text-xl lg:text-2xl">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </span>
+                <span class=" hover:text-primary ">
+                  <a href="#" target="_blank" class="text-lg md:text-xl lg:text-2xl">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </span>
+                <span class=" hover:text-primary ">
+                  <a href="#" target="_blank" class="text-lg md:text-xl lg:text-2xl">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Me End  -->
+
+      <!-- Skills Section Start -->
+      <section id="skills" class="bg-slate-200 py-10 lg:py-20">
+        <div class="container">
+          <div class="flex flex-wrap mb-3">
+            <div class="w-full px-4">
+              <!-- Sub Title -->
+              <div class="text-center">
+                <h2 class="text-2xl text-primary font-bold md:text-3xl lg:text-4xl">My Skills</h2>
+                <p class="text-sm mb-10 md:text-base lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, ex?</p>
+              </div>
+              <!-- Icons -->
+              <div class="flex flex-wrap items-center justify-center gap-7 md:gap-10 ">
+                <span class="w-14 h-14 text-4xl text-orange-700 bg-slate-300 flex items-center justify-center p-4 rotate-45 rounded-lg  md:w-16 md:h-16 md:text-5xl md:p-6">
+                  <i class="fa-brands fa-html5 -rotate-45"></i>
+                </span>
+                <span class="w-14 h-14 text-4xl text-blue-500 bg-slate-300 flex items-center justify-center p-4 rotate-45 rounded-lg md:w-16 md:h-16 md:text-5xl md:p-6">
+                  <i class="fa-brands fa-css3-alt -rotate-45"></i>
+                </span>
+                <span class="w-14 h-14 text-4xl text-yellow-500 bg-slate-300 flex items-center justify-center p-4 rotate-45 rounded-lg md:w-16 md:h-16 md:text-5xl md:p-6">
+                  <i class="fa-brands fa-js -rotate-45"></i>
+                </span>
+                <span class="w-14 h-14 text-4xl text-purple-800 bg-slate-300 flex items-center justify-center p-4 rotate-45 rounded-lg md:w-16 md:h-16 md:text-5xl md:p-6">
+                  <i class="fa-brands fa-bootstrap -rotate-45"></i>
+                </span>
+                <span class="w-14 h-14  bg-slate-300 flex items-center justify-center p-4 rotate-45 rounded-lg relative md:w-16 md:h-16  md:p-6">
+                  <img src="img/tailwind-css-svgrepo-com.svg" class="w-9 h-9 bg-white absolute -rotate-45 rounded-lg md:w-12 md:h-12">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section End -->
+
+      <!-- Project Section Start -->
+      <section class="bg-slate-100 py-10 lg:py-20">
+        <div class="container">
+          <div class="flex flex-wrap">
+            <div class="w-full px-4 text-center">
+              <!-- Sub Title -->
+                <h2 class="text-2xl text-primary font-bold md:text-3xl lg:text-4xl">My Project</h2>
+                <p class="text-sm mb-5 md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <!-- Project Card -->
+            <div class="w-full flex flex-wrap px-4 justify-center">
+              <!-- 1 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/project/1.png" alt="Personal Website" width="w-full" >
+                </div>
+                <h3 class="text-xl font-semibold text-black mt-3 mb-1">Personal Website</h3>
+                <p class="text-base mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus mollitia vitae eum molestias minus ex dolores non quibusdam perspiciatis voluptates.</p>
+                <button type="button" class="bg-primary py-1 px-4 rounded-lg">
+                  <a href="#" class="text-base text-white" target="_blank">View</a>
+                </button>
+              </div>
+
+              <!-- 2 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/project/2.png" alt="Todo Apps" width="w-full" >
+                </div>
+                <h3 class="text-xl font-semibold text-black mt-3 mb-1">Todo Apps</h3>
+                <p class="text-base mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus mollitia vitae eum molestias minus ex dolores non quibusdam perspiciatis voluptates.</p>
+                <button type="button" class="bg-primary py-1 px-4 rounded-lg">
+                  <a href="#" class="text-base text-white" target="_blank">View</a>
+                </button>
+              </div>
+
+              <!-- 3 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/project/3.png" alt="Bookshelf Apps" width="w-full" >
+                </div>
+                <h3 class="text-xl font-semibold text-black mt-3 mb-1">Bookshelf Apps</h3>
+                <p class="text-base mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus mollitia vitae eum molestias minus ex dolores non quibusdam perspiciatis voluptates.</p>
+                <button type="button" class="bg-primary py-1 px-4 rounded-lg">
+                  <a href="#" class="text-base text-white" target="_blank">View</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section End -->
+
+      <!-- Certificate Section Start -->
+      <section id="certificate" class="bg-slate-200 py-10 lg:py-20">
+        <div class="container">
+          <div class="flex flex-wrap">
+            <!-- Sub Title -->
+            <div class="w-full px-4 text-center">
+              <h2 class="text-2xl text-primary font-bold md:text-3xl lg:text-4xl">My Certificate</h2>
+              <p class="text-sm mb-10 md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illo pariatur autem commodi aspernatur nam.</p>
+            </div>
+            <!-- Certificate -->
+            <div class="w-full px-4 flex flex-wrap justify-center">
+              <!-- 1 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/certificate/Dasar-pemrograman-web-Dicoding.png" alt="Sertifikat Dasar-pemrograman-web-Dicoding" width="w-full">
+                </div>
+               <!-- <h3></h3>
+               <p></p>
+               <p></p> -->
+              </div>
+
+              <!-- 2 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/certificate/sertifikat-JS-Dasar-Dicoding.png" alt="Sertifikat-JS-Dasar-Dicoding" width="w-full">
+                </div>
+               <!-- <h3></h3>
+               <p></p>
+               <p></p> -->
+              </div>
+
+              <!-- 3 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/certificate/Belajar-membuat-FrontEnd-Web-Dicoding.png" alt="Sertifikat Belajar-membuat-FrontEnd-Web-Dicoding" width="w-full">
+                </div>
+               <!-- <h3></h3>
+               <p></p>
+               <p></p> -->
+              </div>
+
+              <!-- 4 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/certificate/Sertifikat-Javascript-Sololearn-1.png" alt="Sertifikat pengantar-javascript-Sololearn" width="w-full">
+                </div>
+               <!-- <h3></h3>
+               <p></p>
+               <p></p> -->
+              </div>
+
+              <!-- 5 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/certificate/Always Ngoding-html.png" alt="Sertifikat belajar-html-Always Ngoding" width="w-full">
+                </div>
+               <!-- <h3></h3>
+               <p></p>
+               <p></p> -->
+              </div>
+
+              <!-- 6 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/certificate/Always Ngoding-css.png" alt="Sertifikat belajar-css-Always Ngoding" width="w-full">
+                </div>
+               <!-- <h3></h3>
+               <p></p>
+               <p></p> -->
+              </div>
+
+              <!-- 7 -->
+              <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/certificate/Always Ngoding-js.png" alt="Sertifikat belajar-javascript-Always Ngoding" width="w-full">
+                </div>
+               <!-- <h3></h3>
+               <p></p>
+               <p></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Certificate Section End -->
+
+      <!-- Contact Section Start -->
+      <section id="contact_me" class="bg-slate-100 py-10 lg:py-20">
+        <div class="container">
+          <!-- Sub Title -->
+          <div class="w-full px-4 text-center">
+            <h2 class="text-2xl text-primary font-bold md:text-3xl lg:text-4xl">Contact Me</h2>
+            <p class="text-sm mb-10 md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <!-- Contact Form -->
+          <form action="#">
+            <div class="w-full mx-auto lg:w-2/3 ">
+              <div class="w-full px-4 ">
+                <!-- Input Name -->
+                <div class="w-full px-4 mb-8">
+                  <label for="name" class="text-base text-primary font-bold">Name</label>
+                  <input type="text" name="name" id="name" class="w-full bg-slate-200 text-black p-2 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary lg:p-3">
+                </div>
+                <!-- Input Email -->
+                <div class="w-full px-4 mb-8">
+                  <label for="email" class="text-base text-primary font-bold">Email</label>
+                  <input type="email" name="email" id="email" class="w-full bg-slate-200 text-black p-2 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary lg:p-3">
+                </div>
+                <!-- Input Message -->
+                <div class="w-full px-4 mb-8">
+                  <label for="message" class="text-base text-primary font-bold">Message</label>
+                  <textarea name="message" id="message" class="w-full bg-slate-200 text-black p-2 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary h-28 lg:h-32"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="w-full px-4 mx-auto">
+                  <button type="submit" class="text-base font-semibold text-white bg-primary  py-2 px-5 w-full rounded-xl hover:shadow-lg hover:opacity-80 transition duration-500 md:w-24">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+
+      <!-- Footer Start -->
+      <footer id="footer" class="bg-slate-900 pt-24 pb-12">
+        <div class="container">
+          <div class="flex flex-wrap">
+            <!-- 1 -->
+            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+              <h2 class="text-4xl font-bold text-white mb-4  hover:cursor-pointer hover:opacity-80">FaridFn78</h2>
+              <h3 class="text-xl font-semibold text-white mb-2">Contact Me</h3>
+              <p>abc@gmail.com</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Tasikmalaya</p>
+            </div>
+
+            <!-- 2 -->
+            <div class="w-full px-4 mb-12 text-base text-slate-300 font-medium md:w-1/3">
+              <h3 class="text-xl font-semibold text-white mb-2">Contact Information</h3>
+              <p>abc@gmail.com</p>
+              <p>+628xxxxxxxxxx</p>
+              <p>Tasikmalaya, Jawabarat</p>
+              <p>Indonesia</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="w-full px-4 mb-12 font-medium md:w-1/3">
+              <h3 class="text-xl font-semibold text-white mb-2">Links</h3>
+              <ul class="text-slate-300">
+                <li><a href="#home" class="text-base mb-3 hover:text-primary">Home</a></li>
+                <li><a href="#about_me"  class="text-base mb-3 hover:text-primary">About Me</a></li>
+                <li><a href="#skills"  class="text-base mb-3 hover:text-primary">My Skills</a></li>
+                <li><a href="#project"  class="text-base mb-3 hover:text-primary">My Project</a></li>
+                <li><a href="#certificate"  class="text-base mb-3 hover:text-primary">My Certificate</a></li>
+                <li><a href="contact_me" class="text-base mb-3 hover:text-primary">Contact Me</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </main>
+
+    <script src="dist/JS/main.js"></script>
+  </body>
+</html>

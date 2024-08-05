@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Mode */
+#darkmode:checked ~ label div.darkmode-circle {
+  @apply translate-x-3;
+}
+
+/* Hamburger */
+.hamburger-line {
+  @apply w-[30px] h-[2px] block my-2 bg-black;
+}
+
+.hamburger-active .hamburger-line:nth-child(1) {
+  @apply rotate-45 /*origin-top-left*/;
+}
+.hamburger-active .hamburger-line:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active .hamburger-line:nth-child(3) {
+  @apply -rotate-45 /*origin-bottom-left*/;
+}
