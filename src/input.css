@@ -21,3 +21,15 @@
 .hamburger-active .hamburger-line:nth-child(3) {
   @apply -rotate-45 /*origin-bottom-left*/;
 }
+
+/* Dropdown menu */
+#dropdown-list {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#dropdown-list.show {
+  transform: translateY(0);
+  opacity: 1;
+}
